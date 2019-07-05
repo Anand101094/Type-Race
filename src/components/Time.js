@@ -41,7 +41,7 @@ class Time extends Component {
     handleSpeed = () =>{
         let length= Number(this.props.length-this.props.arr.length)
         let time=this.state.count
-        const speed= length/time
+        const speed= (length/time)*60
         console.log(length,time,speed)
         this.setState({
             speed
